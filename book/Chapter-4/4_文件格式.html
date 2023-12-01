@@ -1,0 +1,576 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4 文件格式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-5/5_工具推荐.html" />
+    
+    
+    <link rel="prev" href="../Chapter-3/3-5_熵编码.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1/1_概述.html">
+            
+                <a href="../Chapter-1/1_概述.html">
+            
+                    
+                    1 概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2/2_压缩依据.html">
+            
+                <a href="../Chapter-2/2_压缩依据.html">
+            
+                    
+                    2 压缩依据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3/3_编码过程.html">
+            
+                <a href="../Chapter-3/3_编码过程.html">
+            
+                    
+                    3 编码过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter-3/3-1_颜色空间转换.html">
+            
+                <a href="../Chapter-3/3-1_颜色空间转换.html">
+            
+                    
+                    3.1 颜色空间转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter-3/3-2_色度下采样.html">
+            
+                <a href="../Chapter-3/3-2_色度下采样.html">
+            
+                    
+                    3.2 色度下采样
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter-3/3-3_DCT.html">
+            
+                <a href="../Chapter-3/3-3_DCT.html">
+            
+                    
+                    3.3 DCT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Chapter-3/3-4_量化.html">
+            
+                <a href="../Chapter-3/3-4_量化.html">
+            
+                    
+                    3.4 量化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Chapter-3/3-5_熵编码.html">
+            
+                <a href="../Chapter-3/3-5_熵编码.html">
+            
+                    
+                    3.5 熵编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="4_文件格式.html">
+            
+                <a href="4_文件格式.html">
+            
+                    
+                    4 文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5/5_工具推荐.html">
+            
+                <a href="../Chapter-5/5_工具推荐.html">
+            
+                    
+                    5 工具推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6/6_发展未来.html">
+            
+                <a href="../Chapter-6/6_发展未来.html">
+            
+                    
+                    6 发展未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7/7_学习资源.html">
+            
+                <a href="../Chapter-7/7_学习资源.html">
+            
+                    
+                    7 学习资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8/8_FAQs.html">
+            
+                <a href="../Chapter-8/8_FAQs.html">
+            
+                    
+                    8 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9/9_参考.html">
+            
+                <a href="../Chapter-9/9_参考.html">
+            
+                    
+                    9 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4 文件格式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="4-&#x6587;&#x4EF6;&#x683C;&#x5F0F;">4 &#x6587;&#x4EF6;&#x683C;&#x5F0F;</h2>
+<hr>
+<p>&#x5E38;&#x7528;&#x7684; JPEG &#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x6709;&#xFF1A; <br></p>
+<ul>
+<li>JFIF&#xFF1A;&#x662F;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x5B58;&#x50A8;&#x548C;&#x4F20;&#x8F93; JPEG &#x56FE;&#x50CF;&#x7684;&#x6700;&#x5E38;&#x89C1;&#x683C;&#x5F0F;&#x3002;</li>
+<li>EXIF&#xFF1A;&#x662F;&#x6570;&#x7801;&#x76F8;&#x673A;&#x548C;&#x5176;&#x4ED6;&#x6444;&#x5F71;&#x56FE;&#x50CF;&#x6355;&#x83B7;&#x8BBE;&#x5907;&#x6700;&#x5E38;&#x7528;&#x7684;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x3002;</li>
+</ul>
+<h4 id="&#x6BB5;&#x7ED3;&#x6784;">&#x6BB5;&#x7ED3;&#x6784;</h4>
+<p>JPEG &#x6587;&#x4EF6;&#x6570;&#x636E;&#x662F;&#x5206;&#x5757;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x5757;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x6BB5;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6BB5;&#x4EE3;&#x8868;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6BB5;&#xFF08;&#x5757;&#xFF09;&#x7684;&#x591A;&#x5C11;&#x548C;&#x6BB5;&#x7684;&#x957F;&#x5EA6;&#x5747;&#x4E0D;&#x56FA;&#x5B9A;&#xFF0C;&#x4E00;&#x822C;&#x4E00;&#x4E2A; JPEG &#x6587;&#x4EF6;&#x53EA;&#x8981;&#x5305;&#x542B;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x6BB5;&#xFF0C;&#x8FD9;&#x4E2A; JPEG &#x6587;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6253;&#x5F00;&#x9884;&#x89C8;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x4E00;&#x4E2A; JPEG &#x56FE;&#x7247;&#x6587;&#x4EF6;&#x7684;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5C55;&#x793A;&#xFF1A; <br></p>
+<p><img src="assets/4_jpeg_file.png" alt="JPEG_File" title="JPEG_File"></p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x5B57;&#x8282;&#x6570;</th>
+<th>&#x6570;&#x636E;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6BB5;&#x6807;&#x8BC6;</td>
+<td>1</td>
+<td>FF</td>
+<td>&#x4E00;&#x4E2A;&#x6BB5;&#x7684;&#x5F00;&#x59CB;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>&#x6BB5;&#x7C7B;&#x578B;</td>
+<td>1</td>
+<td></td>
+<td>&#x8BE5;&#x6BB5;&#x7C7B;&#x578B;&#xFF0C;&#x6BB5;&#x7C7B;&#x578B;&#x7F16;&#x7801;&#xFF08;&#x79F0;&#x4F5C;&#x201C;&#x6807;&#x8BB0;&#x7801;&#x201D;&#xFF09;</td>
+</tr>
+<tr>
+<td>&#x6BB5;&#x957F;&#x5EA6;</td>
+<td>2</td>
+<td></td>
+<td>&#x8BE5;&#x6BB5;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5305;&#x62EC;&#x6BB5;&#x5185;&#x5BB9;&#x548C;&#x6BB5;&#x957F;&#x5EA6;&#x672C;&#x8EAB;,&#x4E0D;&#x5305;&#x62EC;&#x6BB5;&#x6807;&#x8BC6;&#x548C;&#x6BB5;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>&#x6BB5;&#x5185;&#x5BB9;</td>
+<td>&lt;65536</td>
+<td></td>
+<td>&#x6BB5;&#x7684;&#x5185;&#x5BB9;&#xFF08;&#x6570;&#x636E;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li>&#x90E8;&#x5206;&#x6BB5;&#x6CA1;&#x6709;&#x957F;&#x5EA6;&#x4FE1;&#x606F;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x53EA;&#x6709;&#x6BB5;&#x6807;&#x8BC6;&#x548C;&#x6BB5;&#x7C7B;&#x578B;&#xFF0C;&#x6587;&#x4EF6;&#x5934;&#xFF08;FF D8&#xFF09;&#x548C;&#x6587;&#x4EF6;&#x5C3E;&#xFF08;FF D9&#xFF09;&#x5747;&#x5C5E;&#x4E8E;&#x8FD9;&#x79CD;&#x6BB5;&#x3002;<br></li>
+<li>&#x6BB5;&#x4E0E;&#x6BB5;&#x4E4B;&#x95F4;&#x65E0;&#x8BBA;&#x6709;&#x591A;&#x5C11;FF&#x90FD;&#x662F;&#x5408;&#x6CD5;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;FF&#x79F0;&#x4E3A;&#x201C;&#x586B;&#x5145;&#x5B57;&#x8282;&#x201D;&#xFF0C;&#x5FC5;&#x987B;&#x88AB;&#x5FFD;&#x7565;&#x6389;&#x3002;<br></li>
+<li>&#x5728;&#x71B5;&#x7F16;&#x7801;&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x5728;&#x4EFB;&#x4F55; 0xFF &#x5B57;&#x8282;&#x4E4B;&#x540E;&#xFF0C;&#x7F16;&#x7801;&#x5668;&#x4F1A;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x4E4B;&#x524D;&#x63D2;&#x5165; 0x00 &#x5B57;&#x8282;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4E0D;&#x5B58;&#x5728;&#x6807;&#x8BB0;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4ECE;&#x800C;&#x9632;&#x6B62;&#x5E27;&#x9519;&#x8BEF;&#x3002; <br></li>
+</ol>
+<h4 id="&#x6BB5;&#x7C7B;&#x578B;">&#x6BB5;&#x7C7B;&#x578B;</h4>
+<p>&#x6BB5;&#x7C7B;&#x578B;&#x6709;&#x5F88;&#x591A;&#x79CD;&#xFF0C;&#x4E0B;&#x8868;&#x5217;&#x51FA; JPEG &#x6587;&#x4EF6;&#x6BB5;&#x7C7B;&#x578B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6BB5;&#x7C7B;&#x578B;</th>
+<th>Marker</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOI</td>
+<td>0xD8</td>
+<td>&#x6587;&#x4EF6;&#x5934;</td>
+</tr>
+<tr>
+<td>APPn</td>
+<td>0xEn</td>
+<td>&#x5B9A;&#x4E49;&#x4EA4;&#x6362;&#x683C;&#x5F0F;&#x548C;&#x56FE;&#x50CF;&#x8BC6;&#x522B;&#x4FE1;&#x606F;&#xFF0C;JFIF &#x4F7F;&#x7528; APP0&#xFF0C;EXIF &#x4F7F;&#x7528; APP1</td>
+</tr>
+<tr>
+<td>DQT</td>
+<td>0xDB</td>
+<td>&#x5B9A;&#x4E49;&#x91CF;&#x5316;&#x8868;</td>
+</tr>
+<tr>
+<td>SOF0</td>
+<td>0xC0</td>
+<td>&#x5E27;&#x5F00;&#x59CB;&#xFF08;&#x57FA;&#x7EBF; DCT&#xFF09;&#xFF0C;&#x8BB0;&#x5F55;&#x56FE;&#x50CF;&#x5BBD;&#x3001;&#x9AD8;&#xFF0C;&#x5206;&#x91CF;&#x6570;&#x91CF;&#xFF0C;&#x5206;&#x91CF;&#x5B50;&#x91C7;&#x6837;&#x7B49;&#x57FA;&#x672C;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>SOF2</td>
+<td>0xC2</td>
+<td>&#x5E27;&#x5F00;&#x59CB;&#xFF08;&#x6E10;&#x8FDB;&#x5F0F; DCT&#xFF09;</td>
+</tr>
+<tr>
+<td>DHT</td>
+<td>0xC4</td>
+<td>&#x5B9A;&#x4E49; Huffman &#x8868;</td>
+</tr>
+<tr>
+<td>DRI</td>
+<td>0xDD</td>
+<td>&#x5B9A;&#x4E49;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x95F4;&#x9694;</td>
+</tr>
+<tr>
+<td>SOS</td>
+<td>0xDA</td>
+<td>&#x626B;&#x63CF;&#x884C;&#x5F00;&#x59CB;&#xFF0C;&#x538B;&#x7F29;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>RSTn</td>
+<td>0xDn(n=0..7)</td>
+<td>&#x91CD;&#x65B0;&#x5F00;&#x59CB;</td>
+</tr>
+<tr>
+<td>COM</td>
+<td>0xFE</td>
+<td>&#x6CE8;&#x91CA;</td>
+</tr>
+<tr>
+<td>EOI</td>
+<td>0xD9</td>
+<td>&#x6587;&#x4EF6;&#x5C3E;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li>&#x90E8;&#x5206; EXIF &#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x4E5F;&#x6709; APP0 &#x6BB5;&#x3002; <br></li>
+<li>JPEG &#x56FE;&#x50CF;&#x6570;&#x636E;&#x5728; SOS &#x6BB5;&#xFF08;&#x53EA;&#x6709;&#x4E00;&#x6BB5;&#xFF09;&#x3002; <br></li>
+<li>JPEG &#x56FE;&#x50CF;&#x7684;&#x5206;&#x8FA8;&#x7387;&#xFF08;&#x5BBD;&#x9AD8;&#xFF09;&#x4FE1;&#x606F;&#x5728; SOF0 &#x6216;&#x8005; SOF2 &#x6BB5;&#x3002; <br></li>
+<li>&#x5927;&#x90E8;&#x5206; JPEG &#x6587;&#x4EF6;&#x6CA1;&#x6709; DRI &#x6BB5;&#xFF0C;DRI &#x6BB5;&#x56FA;&#x5B9A; 4 &#x4E2A;&#x5B57;&#x8282;&#x3002; <br></li>
+</ol>
+<h5 id="soi">SOI</h5>
+<pre><code>FF D8
+</code></pre><p>&#x3010;&#x5FC5;&#x987B;&#x3011;SOI &#x6BB5;&#x5B9A;&#x4E49;&#x4E86; JPEG &#x6587;&#x4EF6;&#x5934;&#x3002;&#x8BE5;&#x6BB5;&#x4EC5;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#xFF1A;FF D8&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#x4EE3;&#x8868;&#x4E86; JPEG &#x6587;&#x4EF6;&#x7684;&#x5F00;&#x59CB;&#x3002; <br></p>
+<h5 id="app0-app1-">APP0 APP1 ...</h5>
+<p>&#x3010;&#x975E;&#x5FC5;&#x987B;&#x3011;APP0 &#x6BB5;&#x5B9A;&#x4E49;&#x4E86;&#x4EA4;&#x6362;&#x683C;&#x5F0F;&#x548C;&#x56FE;&#x50CF;&#x8BC6;&#x522B;&#x4FE1;&#x606F;&#x3002;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x50CF;&#x7D20;&#x548C;&#x7565;&#x7F29;&#x56FE;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#x3002; <br></p>
+<h5 id="dqt">DQT</h5>
+<pre><code>FF DB
+</code></pre><p>&#x3010;&#x5FC5;&#x987B;&#x3011;DQT &#x6BB5;&#x5B9A;&#x4E49;&#x4E86;&#x91CF;&#x5316;&#x8868;&#x3002;JPEG &#x6587;&#x4EF6;&#x4E00;&#x822C;&#x6709;&#x4E24;&#x4E2A; DQT &#x6BB5;&#xFF0C;&#x4E3A;&#x4EAE;&#x5EA6;&#xFF08;Y&#xFF09;&#x5B9A;&#x4E49;&#xFF11;&#x4E2A;&#x91CF;&#x5316;&#x8868;, &#x4E3A;&#x8272;&#x5EA6;&#xFF08;UV&#xFF09;&#x5B9A;&#x4E49;&#xFF11;&#x4E2A;&#x91CF;&#x5316;&#x8868;&#x3002;</p>
+<h5 id="sof0-sof1-">SOF0 SOF1 ...</h5>
+<p>&#x3010;&#x5FC5;&#x987B;&#x3011;SOF&#x6BB5;&#x5B9A;&#x4E49;&#x4E86;&#x56FE;&#x50CF;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x3002;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x56FE;&#x7247;&#x957F;&#x5BBD;&#x9AD8;&#x3001;&#x7EC4;&#x4EF6;&#x7B49;&#x4FE1;&#x606F;&#x3002;</p>
+<h5 id="dht">DHT</h5>
+<pre><code>FF C4
+</code></pre><p>&#x3010;&#x5FC5;&#x987B;&#x3011;DHT&#x6BB5;&#x5B9A;&#x4E49;&#x4E86; Huffman &#x8868;&#xFF0C;&#x5373;&#x970D;&#x592B;&#x66FC;&#x7F16;&#x7801;&#x8868;&#x3002;</p>
+<h5 id="sos">SOS</h5>
+<pre><code>FF DA
+</code></pre><p>&#x3010;&#x5FC5;&#x987B;&#x3011;SOS &#x6BB5;&#x5B9A;&#x4E49;&#x4E86;&#x626B;&#x63CF;&#x884C;&#x5F00;&#x59CB;&#xFF0C;&#x7D27;&#x63A5;&#x7740; SOS &#x6BB5;&#x540E;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4E2A;&#x626B;&#x63CF;&#x884C;&#xFF08;&#x538B;&#x7F29;&#x7684;&#x56FE;&#x50CF;&#x6570;&#x636E;&#xFF09;&#x3002;&#x4E00;&#x822C; JPEG &#x6587;&#x4EF6;&#x53EA;&#x6709;&#x4E00;&#x4E2A; SOS &#x6BB5;&#x3002;</p>
+<h5 id="com">COM</h5>
+<pre><code>FF FE
+</code></pre><p>&#x3010;&#x975E;&#x5FC5;&#x987B;&#x3011;COM &#x6BB5;&#x5B9A;&#x4E49;&#x4E86;&#x6CE8;&#x91CA;&#x6BB5;&#xFF0C;&#x6709;&#x7684; JPEG &#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x6BB5;&#x3002;</p>
+<h5 id="eoi">EOI</h5>
+<pre><code>FF D9
+</code></pre><p>&#x3010;&#x5FC5;&#x987B;&#x3011;EOI &#x6BB5;&#x5B9A;&#x4E49;&#x4E86; JPEG &#x6587;&#x4EF6;&#x5C3E;&#xFF0C;&#x8BE5;&#x6BB5;&#x4EC5;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#xFF1A;FF D9&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#x4EE3;&#x8868;&#x4E86; JPEG &#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x675F;&#x3002;</p>
+<h4 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h4>
+<ul>
+<li><a href="https://www.cnblogs.com/P201821460033/p/13658489.html" target="_blank">JPEG&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x8BE6;&#x89E3;</a></li>
+<li><a href="https://blog.csdn.net/GrayOnDream/article/details/132651948" target="_blank">JPEG&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x8BE6;&#x89E3;---CSDN</a></li>
+<li><a href="https://www.w3.org/Graphics/JPEG/jfif3.pdf" target="_blank">JFIF</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter-3/3-5_熵编码.html" class="navigation navigation-prev " aria-label="Previous page: 3.5 熵编码">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-5/5_工具推荐.html" class="navigation navigation-next " aria-label="Next page: 5 工具推荐">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4 文件格式","level":"1.5","depth":1,"next":{"title":"5 工具推荐","level":"1.6","depth":1,"path":"book/Chapter-5/5_工具推荐.md","ref":"book/Chapter-5/5_工具推荐.md","articles":[]},"previous":{"title":"3.5 熵编码","level":"1.4.5","depth":2,"path":"book/Chapter-3/3-5_熵编码.md","ref":"book/Chapter-3/3-5_熵编码.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/Chapter-4/4_文件格式.md","mtime":"2023-11-27T02:02:56.615Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-28T08:45:54.526Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
